@@ -12,4 +12,4 @@ Die Jar kann über folgenden Befehl via Terminal gestartet werden:
 ```java -jar EDFToWFDBConverter.jar InputName.edf OutputName```
 
 Das Programm lässt sich auch direkt über die Klasse Main ohne Parameter starten. Dann werden die Parameter für Input auf 03215_hr.edf und Output auf 03215_hr gesetzt.
-(Deshalb liegt die EDF Datei auch nochmal im Projekt Ordner)
+(Deshalb liegt die EDF Datei auch nochmal im Projekt Ordner vor)
