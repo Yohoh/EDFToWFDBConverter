@@ -1,3 +1,9 @@
+/*
+Created by Yannis Heim
+
+E-mail Adresse: yohoh2@gmail.com
+
+ */
 package converter;
 
 import EDflib.EDFException;
