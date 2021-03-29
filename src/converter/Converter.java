@@ -1,8 +1,10 @@
 /*
-Created by Yannis Heim
-
-E-mail Adresse: yohoh2@gmail.com
-
+ *****************************************************************************
+ * Created by Yannis Heim
+ *
+ * E-mail Adresse: yohoh2@gmail.com
+ *
+ ******************************************************************************
  */
 
 package converter;
@@ -205,21 +207,21 @@ public class Converter {
             checksum.update(item);
         }
 
-        String value = Long.toBinaryString(checksum.getValue());
+        String checksumValue = Long.toBinaryString(checksum.getValue());
 
-        if (value.length() < 32) {
-            int numberOfZero = 32 - value.length();
+        if (checksumValue.length() < 32) {
+            int numberOfZero = 32 - checksumValue.length();
             StringBuilder stringBuilder = new StringBuilder();
 
             for (int i = 0; i < numberOfZero; i++) {
                 stringBuilder.append(0);
             }
 
-            stringBuilder.append(value);
+            stringBuilder.append(checksumValue);
             return Integer.parseInt(stringBuilder.substring(16, 32), 2);
         }
 
-        return Integer.parseInt(value.substring(16, 32), 2);
+        return Integer.parseInt(checksumValue.substring(16, 32), 2);
 
     }
 
