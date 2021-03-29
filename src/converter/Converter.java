@@ -40,7 +40,7 @@ public class Converter {
      * Erzeugt die Dateien in die später geschrieben werden soll (.dat Datei und .hea Datei).
      * Liest die gegebene EDF Datei ein.
      *
-     * @param inputFileName Name der Eingabedatei
+     * @param inputFileName Name der Eingabedatei (mit .edf Endung)
      * @param outputFileName Name der Ausgabedatei
      * @throws IOException
      * @throws EDFException
@@ -77,7 +77,7 @@ public class Converter {
 
 
     /**
-     * Entnimmt der eingelesenen EDF Datei alle wichtigen, nicht signalspizifischen, Informationen und schreibt diese in die Header Datei im WFDB Format.
+     * Entnimmt der eingelesenen EDF Datei alle wichtigen, nicht Signal-spezifischen, Informationen und schreibt diese in die Header Datei im WFDB Format.
      *
      * @throws EDFException
      * @throws IOException
@@ -111,7 +111,7 @@ public class Converter {
 
 
     /**
-     * Entnimmt der EDF Datei alle signalspezifischen Informationen und schreibt diese in die Header Datei im WFDB Format.
+     * Entnimmt der EDF Datei alle Signal-spezifischen Informationen und schreibt diese in die Header Datei im WFDB Format.
      *
      * @param signalNumber Nummer des Signals
      * @throws EDFException
