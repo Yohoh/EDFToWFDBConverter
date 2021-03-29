@@ -7,7 +7,7 @@ Der Konverter liegt als .jar Datei unter
 
 Dort liegt auch die bereitgestellte Beispieldatei im EDF Datei.
 
-Die Jar kann über folgenden Befehl über das Terminal starten:
+Die Jar kann über folgenden Befehl über das Terminal gestartet werden:
 
 ```java -jar EDFToWFDBConverter.jar 03215_hr.edf OutputName```
 
